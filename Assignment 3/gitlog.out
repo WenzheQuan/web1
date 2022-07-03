@@ -1,0 +1,43 @@
+https://wenzhegit.herokuapp.com/
+
+commit 4b09a716594f909d7d252289ca400f907e75d339
+Author: WenzheQuan <wquan5@uwo.ca>
+Date:   Mon Nov 8 22:26:40 2021 -0500
+
+    Update step 3 push some data
+
+commit d36eec9060c78da8d51f63a6fa16510c1cf8c480
+Author: WenzheQuan <wquan5@uwo.ca>
+Date:   Mon Nov 8 22:01:57 2021 -0500
+
+    Step 3 update- Push some data
+
+commit fab4152c0f74afb72655b80d0655301d31387c0e
+Author: WenzheQuan <wquan5@uwo.ca>
+Date:   Mon Nov 8 18:49:41 2021 -0500
+
+    final with gitlog and heroku url
+
+commit 936702aed412fcf09cbbbbb3acbc7ac48801e45b
+Author: WenzheQuan <wquan5@uwo.ca>
+Date:   Mon Nov 8 18:31:27 2021 -0500
+
+    Up in the Cloud with Heroku
+
+commit ac9eb7475853d27d6ea9c3477b06667bd52edc11
+Author: WenzheQuan <wquan5@uwo.ca>
+Date:   Mon Nov 8 13:06:01 2021 -0500
+
+    Step 3 - PUSH some data
+
+commit 8af3f566bfab935168eabf793532337bccbc55c8
+Author: WenzheQuan <wquan5@uwo.ca>
+Date:   Mon Nov 8 11:24:37 2021 -0500
+
+    step two - GET a Local server working
+
+commit dbcd1fc3be775d111285ea7f32e28bcec60dbce5
+Author: WenzheQuan <wquan5@uwo.ca>
+Date:   Mon Nov 8 11:23:57 2021 -0500
+
+    step one-Set up a JSON file

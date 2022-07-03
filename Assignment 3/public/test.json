@@ -1,0 +1,16 @@
+{
+	"name":["git.config","git.init","git.clone","git.add"],
+	"description": ["Configure the author name and email address to be used with your commits.",
+	                "Create a new local repository",
+	                "Create a working copy of a local repository",
+	                "Add one or more files to staging (index)"],
+	"url": ["https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config",
+	        "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init",
+	        "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone",
+	        "https://www.atlassian.com/git/tutorials/saving-changes#git-add"],
+	"importance":[[1,2,3,4,5],
+	              [1,2,3,4,5],
+	              [1,2,3,4,5],
+	              [1,2,3,4,5]]
+}   
+

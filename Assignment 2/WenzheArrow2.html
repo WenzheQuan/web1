@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>WenzheArrow</title>
+        <link>
+        <style>
+      
+        </style>
+        <script >
+
+
+            
+        </script>
+        <h2>Hail 129</h2>
+
+    </head>
+    <body>
+        <main>
+     
+           <ul>
+            </ul>
+            <p id="p1"></p>
+        </main>
+        <script>
+                var hail = num => (num%2) ? 3*num+1 : num/2;
+
+        let seq =[129];
+             while (seq[seq.length-1] !=1){
+                    seq.push(hail(seq[seq.length-1]));
+                    }
+
+        filt = seq.filter(item => item<200);
+
+        document.getElementById("p1").innerHTML ="There are "+filt.length+" numbers that  are less than 200";
+        
+        mapSeq = filt.map(item=>item%7)
+
+        </script>
+
+	<footer id="dynamic"></footer>
+     
+
+</body></html>

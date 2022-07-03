@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>WenzheArrow</title>
+        <link>
+        <style>
+      
+        </style>
+        <script >
+
+
+            
+        </script>
+        <h2>Hail 129</h2>
+
+        </head>
+        <body>
+        <main>
+           <ul id="u1">
+           </ul>
+            <p id="p1"></p>
+        </main>
+        <script>
+                var hail = num => (num%2) ? 3*num+1 : num/2;
+
+        let seq =[129];
+             while (seq[seq.length-1] !=1){
+                    seq.push(hail(seq[seq.length-1]));
+                    }
+
+        filt = seq.filter(item => item<200);
+
+        document.getElementById("p1").innerHTML ="There are "+filt.length+" numbers that  are less than 200";
+        
+        mapSeq = filt.map(item=>item%7)
+
+        let freq = mapSeq.reduce((ac,x) => ac.has(x)? 
+        ac.set(x,ac.get(x)+1):ac.set(x,1), new Map());
+        let sorted = Array.from(freq).sort((a,b) => a[0] - b[0]);
+        let max = Math.max(...sorted.map(x=> x[1]));
+
+        function buildList(){
+        for(var i = 0; i < sorted.length; i++){
+        // Create a text node
+        var newTextNode = document.createTextNode(sorted[i]); 
+        var newList = document.createElement("li");
+        var newUL = document.getElementById("u1").appendChild(newList);
+
+        var myMeter = document.createElement("METER");
+            myMeter.max = max;
+            myMeter.value = sorted[i][1];
+        
+        // Append text node and list item
+        newList.appendChild(myMeter); 
+        newList.appendChild(newTextNode); 
+         }
+        }
+
+        buildList(); 
+        </script>
+
+	<footer id="dynamic"></footer>
+     
+
+</body></html>

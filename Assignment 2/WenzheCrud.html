@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>WenzheCrud</title>
+        <link>
+        <style>
+        li:hover{color:red;
+                 background-color:yellow;}
+      
+        </style>
+        <script >
+        </script>
+        <h2 id="hid"></h2>
+
+        </head>
+        <body>
+        <main>
+           <ul id="u1">
+           </ul>
+            <p id="p1"></p>
+        </main>
+        <script>
+        var rhyme = new Object();
+        rhyme.src = "https://bilingualkidspot.com/2018/04/23/popular-nursery-rhymes-for-kids-english/";
+        var Rtitle = "I’m a Little Teapot";
+        rhyme.title = Rtitle;
+        var rhymetext = new Array(8);
+        rhymetext[0] = "I’m a little teapot";
+        rhymetext[1] = "Short and stout";
+        rhymetext[2] = "Here is my handle";
+        rhymetext[3] = "Here is my spout.";
+        rhymetext[4] = "When I get all steamed up";
+        rhymetext[5] = "Hear me shout";
+        rhymetext[6] = "“Tip me over";
+        rhymetext[7] = "and pour me out!’.";
+        rhyme.lineInfo = window.localStorage;
+        rhyme.lineInfo = new Array(8).fill(0);
+        rhyme.lineInfo = JSON.parse(localStorage.getItem('teapot'));
+        document.getElementById("hid").innerHTML=rhyme.title;
+       
+	    document.getElementById("p1");
+		var a = document.createElement('a');
+		var link = document.createTextNode("This is link！");
+		a.appendChild(link);
+		a.title = "This is link！";
+		a.href = rhyme.src;
+		document.body.appendChild(a);
+
+        for(var i = 0; i < rhymetext.length; i++){
+        // Create a text node
+        var newTextNode = document.createTextNode(rhymetext[i]);
+        var newlineinfo = document.createTextNode(rhyme.lineInfo[i]);
+        var newList = document.createElement("li");
+        var newspan = document.createElement("span");
+        newList.id = "li"+i;
+        newspan.id = "span"+i;
+        var newLI = document.getElementById("u1").appendChild(newList);
+        // Append text node and list item
+        newList.appendChild(newTextNode);
+        var newSpan = document.getElementById("li"+i).appendChild(newspan);
+        newspan.appendChild(newlineinfo);
+        }
+
+        var count=[...new Array(rhymetext.length).keys()];
+        for(let i in count){
+        document.getElementById("li"+i).addEventListener("mouseenter", function() {
+        rhyme.lineInfo[i]=rhyme.lineInfo[i]+1;
+        localStorage.setItem('teapot',JSON.stringify(rhyme.lineInfo));
+        document.getElementById("span"+i).innerHTML=rhyme.lineInfo[i];
+          });}
+   
+        </script>
+
+	<footer id="dynamic"></footer>
+     
+
+</body></html>
